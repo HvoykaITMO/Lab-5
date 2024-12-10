@@ -40,10 +40,3 @@ with open('task3.csv', 'w', newline='', encoding='utf8') as f:
     writer.writerows(for_csv)
 
 
-with open('task_add.txt') as f:
-    material = f.read()
-    mail = [el.strip() for el in re.findall('\s\В{2,30}@\.\w{4,}', material)]
-    website = [el.strip() for el in re.findall('\shttp.{2,30}?\s', material)]
-    # print(mail)
-
-
